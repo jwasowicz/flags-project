@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import FlagContainer from "./Flag/FlagContainer";
+import Navbar from "./Navbar/Navbar";
+import ValuesContext from "./context/ValuesContext";
+
 
 function App() {
+
+  const [isDisplay, setIsDisplay] = useState(true);
+  const [flagCodes, setFlagCodes] = useState([]);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ValuesContext.Provider value={{isDisplay, setIsDisplay, flagCodes, setFlagCodes}}>
+      <div className="container">
+        <Navbar />
+        <FlagContainer />
+      </div>
+    </ValuesContext.Provider>
   );
 }
 
