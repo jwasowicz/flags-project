@@ -80,20 +80,15 @@ const FlagContainer = () => {
 
   return (
     <>
-{/*       <h1
-        style={{ color: "green", margin: "5rem 0 0 0", textAlign: "center" }}
-      >
-        {randomFlag}
-      </h1>{" "} */}
       <br />
       {endScreen && (
         <h1 style={{ color: isWin ? "green" : "red", margin: "5rem 0 0 0" }}>
-          {isWin ? "Won" : "Lost"}
+          {isWin ? "Won" : randomFlag}
         </h1>
       )}{" "}
       <br />
       <div
-        style={{ gap: endScreen ? "" : "2px", marginTop: isWin ? "0" : "5rem" }}
+        style={{ gap: endScreen ? "" : "2px", marginTop: isWin ? "0" : "2rem" }}
         ref={gridContainer}
         className="gridContainer"
       >
