@@ -88,7 +88,7 @@ const FlagContainer = () => {
       )}{" "}
       <br />
       <div
-        style={{ gap: endScreen ? "" : "2px", marginTop: isWin ? "0" : "2rem" }}
+        style={{ gap: endScreen ? "" : "2px", marginTop: isWin ? "3rem" : "4rem" }}
         ref={gridContainer}
         className="gridContainer"
       >
