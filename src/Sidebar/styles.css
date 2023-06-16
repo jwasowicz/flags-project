@@ -44,7 +44,6 @@
   color: white;
   font-size: 1.1rem;
   font-weight: bold;
-
 }
 
 .icon {
@@ -91,34 +90,63 @@
   font-size: 1.1rem;
 }
 
-@media screen and (max-width: 600px) {
+.MuiSwitch-root {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 499px) {
+  .sidebar-container {
+    width: 85%;
+  }
+
+  .options-container {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 649px) {
   .sidebar-container {
     width: 70%;
   }
 
   .options-container {
-    width: 70%;
-  }
-
-
-}
-
-@media screen and (min-width: 600px) and (max-width: 850px) {
-  .sidebar-container {
-    width: 50%;
-  }
-
-  .options-container {
     width: 50%;
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .sidebar-container {
+@media screen and (min-width: 650px) and (max-width: 849px) {
+  .sidebar-container,
+  .sidebar-container.open {
+    width: 65%;
+  }
+
+  .options-container,
+  .options-container.open {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1099px) {
+  .sidebar-container,
+  .sidebar-container.open {
+    width: 50%;
+  }
+
+  .options-container,
+  .options-container.open {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .sidebar-container,
+  .sidebar-container.open {
+    width: 35%;
+  }
+
+  .options-container,
+  .options-container.open {
     width: 30%;
-  }
-
-  .options-container {
-    width: 25%;
   }
 }
