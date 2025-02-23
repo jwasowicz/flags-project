@@ -11,7 +11,7 @@ https://flagleunlimited.netlify.app/
 
 ## Installation:
 ```
-git clone https://github.com/jwasowicz/flags-project
+git clone https://github.com/jwasowicz/flags-project.git
 cd flags-project
 npm install
 npm start
