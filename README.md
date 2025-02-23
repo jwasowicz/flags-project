@@ -11,7 +11,7 @@ Typescript + React + Context
 
 ## Installation:
 ```
-git clone [https://github.com/jwasowicz/tabu](https://github.com/jwasowicz/flags-project)
+git clone (https://github.com/jwasowicz/flags-project)
 cd flags-project
 npm install
 npm start
