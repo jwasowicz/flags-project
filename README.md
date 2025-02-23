@@ -7,7 +7,7 @@ Typescript + React + Context
 
 ## Netlify:
 ### Link:
-(https://flagleunlimited.netlify.app/)
+https://flagleunlimited.netlify.app/
 
 ## Installation:
 ```
